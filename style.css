@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(todoBgImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background-color: transparent;
+    min-width: fit-content;
+    flex-wrap: nowrap;
+    justify-self: center;
+    padding: 0 !important;
+    margin: .5rem 0 1rem 0;
+    box-shadow: rgb(1, 30, 58) 10px 10px 40px -8px;
+}
+
+.todoBox {
+    min-height: 450px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    /* align-items:flex-start; */
+    justify-self: center;
+    margin: 2rem 5rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: rgb(6, 101, 196) 10px 10px 60px -9px;
+    background: transparent;
+    color:rgb(122, 235, 255);
+}
+
+.heading {
+    display: flex;
+    max-height: max-content;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    margin: 0 0 1rem 0;
+}
+
+.todoList {
+    display: block;
+    min-height: 300px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.todos {
+    display: flex;
+}
+.todo-li {
+    list-style-type: disc; color: rgb(122, 235, 255);
+    display: flex ;
+    justify-self: flex-start;
+    flex-wrap: nowrap;
+}
+.todo-p {
+    display: flex;
+    margin: 0 0.5rem 0 0;
+}
+.checkbox-1 {
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: flex-end !important;
+}
+
+.createTodo {
+    display: flex;
+    justify-content:space-between;
+    max-height: max-content;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+}
