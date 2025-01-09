@@ -19,11 +19,7 @@
         <div class="heading">Existing Todos</div>
 
         <div id="todolist" class="todoList">
-            <div class="todos">
-                <ul class="todo-li"><li></li></ul>
-                <p class="todo-p">This is my first todo work.</p>
-                <input class="form-check-input me-1 checkbox-1" type="checkbox" value="">
-            </div>
+            
         </div>
 
         <div class="createTodo">
@@ -34,29 +30,29 @@
                 <div class="modal-content" style="background-color: rgba(14, 13, 13, 0.6);">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">New Todo</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" style="background-color: rgb(7, 174, 240);" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                     <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Title</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <label for="todo-to-be-added" class="col-form-label">Task to be added</label>
+                        <input type="text" id="todo-to-be-added" class="form-control" value="">
                     </div>
-                    <div class="mb-3">
+                    <!-- <div class="mb-3">
                         <label for="message-text" class="col-form-label">Description</label>
                         <textarea class="form-control" id="message-text"></textarea>
-                    </div>
+                    </div> -->
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Don't Save</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Don't Add</button>
+                    <button onclick="createTodo()" type="button" class="btn btn-primary">Add</button>
                 </div>
                 </div>
             </div>
             </div>
         
-            <button type="button" class="btn btn-primary">Delete Todo</button>
+            <button type="button" id = "Delete" onclick = "selectDel()" class="btn btn-primary">Delete Todo</button>
         </div>
 
     <script src="TodoScript.js"></script>

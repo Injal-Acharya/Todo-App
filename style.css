@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 
 body {
     background: url(todoBgImage.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -66,11 +67,15 @@ body {
 .todo-p {
     display: flex;
     margin: 0 0.5rem 0 0;
+    width: 100%;
 }
 .checkbox-1 {
     display: flex !important;
     flex-wrap: nowrap;
     justify-content: flex-end !important;
+}
+.checkbox-1:hover {
+    cursor: pointer;
 }
 
 .createTodo {
@@ -82,3 +87,26 @@ body {
     margin: 1rem 0 0 0;
     padding: 0.5rem;
 }
+
+.toggle {
+    visibility: hidden;
+}
+.delete-btn {
+    display: inline-block;
+    justify-self: flex-start;
+    align-self: flex-start;
+    background: rgba(0,0,0, 0.1);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn:hover {
+      background-color: rgba(0,0,0, 0.7);
+  }
+  
+  img {
+      height: 20px;
+      width: 15px;
+  }
