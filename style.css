@@ -100,13 +100,36 @@ body {
     cursor: pointer;
     padding: 0;
     margin: 0;
+    border-radius: 30%;
+  }
+  .bgtoggle {
+    background-color: black !important;
   }
   
-  .btn:hover {
-      background-color: rgba(0,0,0, 0.7);
+  .delete-btn:hover {
+      background-color: rgba(0,0,0, 0.3);
   }
   
+  .delete-btn:hover::click {
+    background-color: transparent;
+  }
+
   img {
       height: 20px;
       width: 15px;
   }
+
+.select-btn {
+    display: inline-block;
+    justify-self: flex-start;
+    align-self: center;
+    background: rgba(1, 17, 61, 1);
+    border: 1px solid;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+}
+.select-btn:hover {
+    background-color: rgba(1, 17, 61, 0.6);
+}
