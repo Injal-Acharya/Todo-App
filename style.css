@@ -122,7 +122,7 @@ body {
 .select-btn {
     display: inline-block;
     justify-self: flex-start;
-    align-self: center;
+    align-self: flex-start;
     background: rgba(1, 17, 61, 1);
     border: 1px solid;
     cursor: pointer;
